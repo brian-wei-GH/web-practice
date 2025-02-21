@@ -1,0 +1,137 @@
+.navbar-brand img {
+    width: 70px;
+    height: auto;
+}
+
+.dropdown-menu {
+    text-align: center;
+}
+
+.dropdown-menu a:hover {
+    color: deepskyblue;
+}
+
+.dr-model {
+    width: 200px;
+}
+
+.dr-owners {
+    width: 500px;
+}
+
+.dr-owners .dr-owners-bt {
+    font-size: x-large;
+    color: orange;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+}
+
+.card img {
+    height: 600px;
+}
+
+.card-body {
+    background-color: #E0E0E0;
+}
+
+.card-body h2 {
+    color: red;
+    text-align: center;
+}
+
+.menu {
+    width: auto;
+    height: 700px;
+    text-align: center;
+}
+
+.row .col-sm-2 { /* to make sure menu blue box can match the same border with col-sm-2 */
+    padding: 0;
+    border: 1px solid blue
+}
+
+.row .col-sm-5 { /* to mack sure menu-info can match the same border with col-sm-5 */
+    padding: 0;
+}
+.row .menu-block {
+    border-bottom: 1px solid blue;
+    border-top: 1px solid blue;
+}
+.row .fin-block {
+    border: 1px solid blue;
+}
+
+.module_select_title {
+    background-color: dodgerblue;
+    padding: 5px 0 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer; /* change mouse icon to finger*/
+}
+
+.module_item a {
+    border-bottom: 1px solid gray;
+    padding: 5px 0 5px 0;
+    display: block;
+    text-decoration: none;
+    background-color: #E1E1E1;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.m-logo {
+    padding-left: 300px;
+    padding-bottom: 10px;
+}
+
+.m-logo img {
+    width: 150px;
+    height: auto;
+
+}
+
+.rr-title, .rr-title2 {
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
+    height: 50px;
+    font-size: large;
+}
+
+.rr-title {
+    background-color: orange;
+}
+
+.rr-title2 { /* issue that padding-top disable */
+    background-color: #FFF666;
+}
+
+.table-secondary .op-delete {
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.finance-title {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.list-group {
+    border-radius: 0;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.fin-result {
+    margin-top: 10px;
+    margin-left: 100px;
+    font-size: x-large;
+}

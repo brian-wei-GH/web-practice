@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMW WEB PROJECT</title>
+    <link rel="stylesheet" href="static/plugins/bootstrap-5.3.3/css/bootstrap.css">
+    <link rel="stylesheet" href="static/CSS/project_css.css">
+
+
+</head>
+<body>
+
+<!-- creating navigation header bar --> <!-- with dark theme-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.bmwusa.com/">
+            <img src="/static/image/bmw_logo.png" alt="...">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Models
+                        </button>
+                        <ul class="dropdown-menu dr-model">
+                            <li><a class="dropdown-item" href="https://www.bmwusa.com/vehicles/2-series/overview.html">2
+                                Series</a></li>
+                            <li><a class="dropdown-item"
+                                   href="https://www.bmwusa.com/vehicles/3-series/3-series-sedan/bmw-3-series-sedan.html">3
+                                Series</a></li>
+                            <li><a class="dropdown-item" href="https://www.bmwusa.com/vehicles/4-series/overview.html">4
+                                Series</a></li>
+                            <li><a class="dropdown-item"
+                                   href="https://www.bmwusa.com/vehicles/5-series/sedan/overview.html">5 Series</a></li>
+                            <li><a class="dropdown-item"
+                                   href="https://www.bmwusa.com/vehicles/7-series/sedan/overview.html">7 Series</a></li>
+                            <li><a class="dropdown-item" href="https://www.bmwusa.com/vehicles/8-series/overview.html">8
+                                Series</a></li>
+                            <li><a class="dropdown-item" href="https://www.bmwusa.com/vehicles/x-models.html">SUV</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://www.bmwusa.com/vehicles/bmw-m/overview.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-fire" viewBox="0 0 16 16">
+                                    <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+                                </svg>
+                                M Models
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-fire" viewBox="0 0 16 16">
+                                    <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+                                </svg>
+                            </a></li>
+                            <li><a class="dropdown-item" href="https://www.bmwusa.com/all-electric.html">Electric</a>
+                            </li>
+                        </ul> <!-- model list dropdown menu-->
+                    </div> <!-- here is for models dropdown-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.bmwusa.com/build-your-own.html#/series">Build Your Own</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Owners
+                    </a>
+                    <ul class="dropdown-menu dr-owners">
+                        <li><a class="dropdown-item"
+                               href="https://login.bmwusa.com/oneid/#/login?client=usahub&brand=bmw&country=US&language=en&scope=authenticate_user&response_type=code&redirect_uri=https://mybmw.bmwusa.com/sso&state=%2Fterms%2Faccept?language=en">Sign
+                            in to My BMW</a></li>
+                        <li><a class="dropdown-item"
+                               href="https://login.bmwusa.com/oneid/#/login?client=usahub&brand=bmw&country=US&language=en&scope=authenticate_user&response_type=code&redirect_uri=https://mybmw.bmwusa.com/sso&state=%2Fterms%2Faccept?language=en">Register
+                            for My BMW</a></li>
+                        <li><a class="dropdown-item" href="https://www.bmwusa.com/my-bmw-app.html">My BMW App</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><span class="dr-owners-bt">BMW OWNERS</span></li>
+                    </ul> <!-- this is for dropdown owners -->
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- creating dynamic images and motto-->
+<div class="card w-100 h-auto">
+    <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/image/bmw_solo1.png" class="d-block w-100 " alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/static/image/bmw_solo2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/static/image/bmw_solo3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div> <!-- carousel images auto--> <!-- using jQuery function-->
+    <div class="card-body">
+        <h2 class="card-title">Motto: The Ultimate Driving Machine</h2>
+    </div>
+</div>
+<!--dashboard for bmw M and Finance--------------------------->
+<div class="container">
+    <div style="width: auto; height: 100px"></div>
+    <div class="m-logo">
+        <img src="/static/image/bmw_m_logo.png" alt="...">
+    </div>
+    <div class="row">
+        <div class="col-sm-7 rr-title"><h4>Performance and Efficiency</h4></div>
+        <div class="col-sm-5 rr-title2"><h4>$ Finance $</h4></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="menu">
+                <div class="item">
+                    <div class="module_select_title" onclick="clickMe(this);">The Powerhouses</div>
+                    <div class="module_item hide">
+                        <a class="module_item_s">M2</a>
+                        <a class="module_item_s">M3</a>
+                        <a class="module_item_s">M4</a>
+                        <a class="module_item_s">M8</a>
+                        <a class="module_item_s">X3M</a>
+                        <a class="module_item_s">X4M</a>
+                        <a class="module_item_s">X5M</a>
+                        <a class="module_item_s">X6M</a>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <div class="module_select_title" onclick="clickMe(this);">The Pioneers</div>
+                    <div class="module_item hide">
+                        <a class="module_item_s">i4</a>
+                        <a class="module_item_s">i5</a>
+                        <a class="module_item_s">i7</a>
+                        <a class="module_item_s">iX</a>
+                        <a class="module_item_s">XM</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="module_select_title" onclick="clickMe(this);">The Athletes (xDrive)</div>
+                    <div class="module_item hide">
+                        <a class="module_item_s">M240i</a>
+                        <a class="module_item_s">M340i</a>
+                        <a class="module_item_s">M440i</a>
+                        <a class="module_item_s">M850i</a>
+                    </div>
+                </div> <!-- for module select lists-->
+
+            </div>
+        </div>
+        <div class="col-sm-5 menu-block">
+            <div class="menu-info">
+                <table class="table">
+                    <thead class="table-info">
+                    <tr>
+                        <th scope="col">Model</th>
+                        <th scope="col">Horsepower</th>
+                        <th scope="col">0-60 MPH</th>
+                        <th scope="col">MSRP</th>
+                        <th scope="col">Operation</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-secondary">
+                    <tr class="m2 d-none">
+                        <th scope="row">M2</th>
+                        <td>453 hp</td>
+                        <td>4.2 s</td>
+                        <td>$64,900</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="m3 d-none">
+                        <th scope="row">M3</th>
+                        <td>473 hp</td>
+                        <td>4.1 s</td>
+                        <td>$76,000</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="m4 d-none">
+                        <th scope="row">M4</th>
+                        <td>473 hp</td>
+                        <td>4.1 s</td>
+                        <td>$79,100</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="m8 d-none">
+                        <th scope="row">M8</th>
+                        <td>617 hp</td>
+                        <td>3.0 s</td>
+                        <td>$138,800</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="x3m d-none">
+                        <th scope="row">X3 M</th>
+                        <td>473 hp</td>
+                        <td>3.9 s</td>
+                        <td>$75,500</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="x4m d-none">
+                        <th scope="row">X4 M</th>
+                        <td>473 hp</td>
+                        <td>3.9 s</td>
+                        <td>$79,100</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="x5m d-none">
+                        <th scope="row">X5 M</th>
+                        <td>617 hp</td>
+                        <td>3.8 s</td>
+                        <td>$124,800</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="x6m d-none">
+                        <th scope="row">X6 M</th>
+                        <td>617 hp</td>
+                        <td>3.8 s</td>
+                        <td>$129,700</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="i4 d-none">
+                        <th scope="row">i4 M50</th>
+                        <td>electric</td>
+                        <td>3.7 s</td>
+                        <td>$70,700</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="i5 d-none">
+                        <th scope="row">i5 M60</th>
+                        <td>593 hp</td>
+                        <td>3.7 s</td>
+                        <td>$84,100</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="i7 d-none">
+                        <th scope="row">i7 M70</th>
+                        <td>650 hp</td>
+                        <td>3.5 s</td>
+                        <td>$168,500</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="ix d-none">
+                        <th scope="row">iX M60 SUV</th>
+                        <td>610 hp</td>
+                        <td>3.6 s</td>
+                        <td>$111,500</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="xm d-none">
+                        <th scope="row">XM Sport</th>
+                        <td>644 hp</td>
+                        <td>4.1 s</td>
+                        <td>$162,150</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="m240i d-none">
+                        <th scope="row">M240i xDrive</th>
+                        <td>382 hp</td>
+                        <td>4.1 s</td>
+                        <td>$52,100</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="m340i d-none">
+                        <th scope="row">M340i xDrive</th>
+                        <td>382 hp</td>
+                        <td>4.1 s</td>
+                        <td>$57,995</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="m440i d-none">
+                        <th scope="row">M440i xDrive</th>
+                        <td>375 hp</td>
+                        <td>4.2 s</td>
+                        <td>$66,250</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="m850i d-none">
+                        <th scope="row">M850i xDrive</th>
+                        <td>523 hp</td>
+                        <td>3.6 s</td>
+                        <td>$106,300</td>
+                        <td class="op-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-trash"
+                                 viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div class="col-sm-5 fin-block">
+            <div class="menu-finance">
+                <div class="finance-title">
+                    <h5>Payment Estimator</h5>
+                </div>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">APR(%)= 2.99%</li>
+                    <li class="list-group-item">
+                        MSRP
+                        <span><input type="text" id="msrp-val" placeholder="i.e.: $60000"></span>
+                    </li>
+                    <li class="list-group-item">
+                        Down Payment
+                        <span><input type="text" id="dp-val" placeholder="i.e.: $5000"></span>
+                    </li>
+
+                    <li class="list-group-item">
+                        Terms (Months)
+                        <div class="btn-group dropend">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                select the term
+                            </button>
+                            <ul class="dropdown-menu" >
+                                <li><a class="dropdown-item cal-fin" >30</a></li>
+                                <li><a class="dropdown-item cal-fin" >36</a></li>
+                                <li><a class="dropdown-item cal-fin" >42</a></li>
+                                <li><a class="dropdown-item cal-fin" >48</a></li>
+                                <li><a class="dropdown-item cal-fin" >54</a></li>
+                                <li><a class="dropdown-item cal-fin" >60</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+                <div class="fin-result">
+                    <span id="fin-result">0</span> / month
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="width: auto; height: 200px;"></div> <!--final blank-->
+</div>
+
+<script src="static/js/jquery-3.7.1.min.js"></script>
+<script src="static/plugins/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+
+<script src="static/js/project_js.js"></script>
+
+</body>
+</html>
